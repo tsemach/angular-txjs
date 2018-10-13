@@ -1,0 +1,68 @@
+
+<nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation" (click)="toggle()">
+    <span class="navbar-toggler-icon"></span>  
+  </button>
+
+  <ul class="navbar-nav mr-auto">  
+    <div class="row">
+      <li class="navbar-item active">
+        <a  style="margin-left: 20px;  color: white">Sessions</a>
+      </li>      
+      <li class="navbar-item active">
+        <a  style="margin-left: 20px; color: white">Sessions</a>
+      </li>      
+      <li class="navbar-item active">
+        <a style="margin-left: 20px; color:   coral">Recorder <span class="sr-only">(current)</span></a>
+      </li>  
+    </div>
+  </ul>
+
+  <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form> 
+
+</nav>
+
+<div [hidden]="!isForm">
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+
+<div class="btn-group" mdbDropdown>
+    <button mdbDropdownToggle type="button" mdbBtn color="primary" class="dropdown-toggle waves-light" mdbWavesEffect>
+        Basic dropdown
+    </button>
+
+    <div class="dropdown-menu dropdown-primary">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="divider dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+</div>
+
+<button mdbBtn type="button" color="primary" class="waves-light" mdbWavesEffect>Primary</button>
+<button mdbBtn type="button" color="default" class="waves-light" mdbWavesEffect>Default</button>
+<button mdbBtn type="button" color="secondary" class="waves-light" mdbWavesEffect>Secondary</button>
+<button mdbBtn type="button" color="success" class="waves-light" mdbWavesEffect>Success</button>
+<button mdbBtn type="button" color="info" class="waves-light" mdbWavesEffect>Info</button>
+<button mdbBtn type="button" color="warning" class="waves-light" mdbWavesEffect>Warning</button>
+<button mdbBtn type="button" color="danger" class="waves-light" mdbWavesEffect>Danger</button>
+

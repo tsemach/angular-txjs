@@ -10,11 +10,6 @@ import { HostListener } from '@angular/core';
 export class AppComponent {
   title = 'angular-txjs';
 
-  isForm = false;  
-
-  toggle() {
-    this.isForm = !this.isForm;
-  }  
   
 
 }

@@ -38,7 +38,7 @@ import { AppServiceMenuModule } from './service-menu/service-menu.module';
   imports: [
     BrowserModule,
     FormsModule,    
-    MDBBootstrapModule.forRoot(),  
+    MDBBootstrapModule.forRoot(),
     BrowserAnimationsModule,
     NgbModule,
     AppMaterialModule,

@@ -1,12 +1,24 @@
-<app-topbar></app-topbar>
-    <button class="mat-raised-button mat-primary" >Save</button>
-<app-service-menu></app-service-menu>     
 
+<nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
 
-<!-- <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation" (click)="toggle()">
-    <span class="navbar-toggler-icon"></span>  
-  </button>
+  <div class="btn-group" mdbDropdown>
+    
+    <button mdbDropdownToggle class="navbar-toggler waves-light" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation" mdbWavesEffect (click)="toggle()">
+      <span class="navbar-toggler-icon"></span>  
+    </button>
+
+    <!-- <button mdbDropdownToggle type="button" mdbBtn color="primary" class="dropdown-toggle waves-light" mdbWavesEffect>
+        Basic dropdown
+    </button> -->
+
+    <div class="dropdown-menu dropdown-primary">
+        <a class="dropdown-item" (click)="openAddServiceDialog()">Add Service</a>
+        <a class="dropdown-item" href="#">Datebase setting</a>        
+        <div class="divider dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+
+  </div>
 
   <ul class="navbar-nav mr-auto">  
     <div class="row">
@@ -29,7 +41,21 @@
 
 </nav>
 
-<div [hidden]="!isForm">
+<div class="btn-group" mdbDropdown>
+    <button mdbDropdownToggle type="button" mdbBtn color="primary" class="dropdown-toggle waves-light" mdbWavesEffect>
+        Basic dropdown
+    </button>
+
+    <div class="dropdown-menu dropdown-primary">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="divider dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+</div>
+
+<div [hidden]="true">
 <form>
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
@@ -48,19 +74,6 @@
 </form>
 </div>
 
-<div class="btn-group" mdbDropdown>
-    <button mdbDropdownToggle type="button" mdbBtn color="primary" class="dropdown-toggle waves-light" mdbWavesEffect>
-        Basic dropdown
-    </button>
-
-    <div class="dropdown-menu dropdown-primary">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
-        <div class="divider dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Separated link</a>
-    </div>
-</div>
 
 <button mdbBtn type="button" color="primary" class="waves-light" mdbWavesEffect>Primary</button>
 <button mdbBtn type="button" color="default" class="waves-light" mdbWavesEffect>Default</button>
@@ -70,4 +83,4 @@
 <button mdbBtn type="button" color="warning" class="waves-light" mdbWavesEffect>Warning</button>
 <button mdbBtn type="button" color="danger" class="waves-light" mdbWavesEffect>Danger</button>
 
-<mat-checkbox>This is material checkbox</mat-checkbox> -->
+<mat-checkbox>This is material checkbox</mat-checkbox>

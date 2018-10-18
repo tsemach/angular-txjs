@@ -1,0 +1,43 @@
+a:link {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(51, 99, 170);
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {    
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+li { 
+  float:left;
+  position:relative;
+}
+
+ul {
+    list-style:none;
+    position: relative;
+}
+
+a { 
+    text-decoration:none;
+    margin:10px;
+    background:red;
+    float:left;    
+    color:#fff;
+    padding:2px 5px;
+    text-align:center;
+    white-space:nowrap;
+}
+
+#content{overflow: hidden} // hide horizontal scrollbar

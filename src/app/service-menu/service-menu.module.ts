@@ -1,43 +1,33 @@
-
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule, ErrorHandler } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
+import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms';
-import { NgModule } from '@angular/core';
-// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-//import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-//import { AppMaterialModule } from '../app-material.module';
-
-//import { MDBBootstrapModule } from 'angular-bootstrap-md';
-
-
+import { AppMaterialModule } from '../app-material.module';
 import { ServiceMenuComponent } from './service-menu.component';
-
-const appRoutes: Routes = [
-    // { path: 'forms', 'component': FormsComponent, children: [
-    //     { path: 'examples', 'component': FormExamplesComponent },
-    //     { path: 'services', 'component': FormsServicesComponent }
-    // ] },
-  ];
+import { ApplicationService } from '../services/application.service';
+import { ApplicationErrorHandler } from '../common/application-error-hadler';
 
 @NgModule({
   declarations: [
-    ServiceMenuComponent
+    ServiceMenuComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    RouterModule.forRoot(appRoutes),    
-    // MDBBootstrapModule.forRoot(),  
-    //BrowserAnimationsModule,
-    // NgbModule,
-    //AppMaterialModule,
-
-    //BrowserAnimationsModule,
+    FormsModule,    
+    MDBBootstrapModule.forRoot(),
+    BrowserAnimationsModule,
+    NgbModule,
+    AppMaterialModule,    
   ],
-  providers: [],
+  providers: [
+    ApplicationService,
+//    { provide: ErrorHandler, useClass: ApplicationErrorHandler}    
+  ],
   exports: [ServiceMenuComponent]
 })
-export class AppServiceMenuModule { }
+export class AppServiceMenuModule{ }
+

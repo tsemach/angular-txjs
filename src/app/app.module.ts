@@ -18,9 +18,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppMaterialModule } from './app-material.module';
 
-import { TopbarNavComponent } from './topbar/topbar-nav/topbar-nav.component';
-import { TobarDialogAddServiceComponent } from './topbar/tobar-dialog-add-service/tobar-dialog-add-service.component';
-import { TopbarComponent } from './topbar/topbar.component';
+// import { TopbarNavComponent } from './topbar/topbar-nav/topbar-nav.component';
+// import { TobarDialogAddServiceComponent } from './topbar/tobar-dialog-add-service/tobar-dialog-add-service.component';
+// import { TopbarComponent } from './topbar/topbar.component';
 
 import { AppTopbarModule } from './topbar/topbar.module';
 import { AppComponent } from './app.component';
@@ -45,9 +45,6 @@ import { AppServiceMenuModule } from './service-menu/service-menu.module';
     AppTopbarModule,
     AppServiceMenuModule    
   ],
-  // entryComponents: [
-  //   TobarDialogAddServiceComponent
-  // ],
   providers: [],
   bootstrap: [AppComponent]
 })

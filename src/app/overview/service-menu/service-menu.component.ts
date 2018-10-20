@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { HostListener } from '@angular/core';
-import {NgbAccordionConfig} from '@ng-bootstrap/ng-bootstrap';
-import { ApplicationService } from '../services/application.service';
+import { NgbAccordionConfig } from '@ng-bootstrap/ng-bootstrap';
+import { ApplicationService } from '../../services/application.service';
 
 @Component({
   selector: 'app-service-menu',
@@ -11,8 +11,8 @@ import { ApplicationService } from '../services/application.service';
   providers: [NgbAccordionConfig] 
 })
 export class ServiceMenuComponent implements OnInit {
-
-  services = [
+  services = [];
+  services2 = [
       {          
         name: 'service-1', 
         jobs: [

@@ -1,3 +1,4 @@
+
 a:link {
     color: blue;
     background-color: transparent;
@@ -9,10 +10,12 @@ a:visited {
     background-color: transparent;
     text-decoration: none;
 }
+
 a:hover {    
     background-color: transparent;
     text-decoration: underline;
 }
+
 a:active {
     color: yellow;
     background-color: transparent;
@@ -38,6 +41,11 @@ a {
     padding:2px 5px;
     text-align:center;
     white-space:nowrap;
+}
+
+.service-group-list-item:hover {    
+  background-color: rgb(193, 212, 212);
+  text-decoration: underline;
 }
 
 #content{overflow: hidden} // hide horizontal scrollbar

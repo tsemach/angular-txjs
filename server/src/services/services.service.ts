@@ -1,6 +1,7 @@
 import * as express from 'express';
 import { Application } from '../application/application';
 
+
 export class HttpService {
 
   constructor() {
@@ -21,7 +22,7 @@ export class HttpService {
             name: 'service-1', 
             jobs: [
               {
-                name: 'job-11',                
+                name: 'job-11',
                 uuid: '1234',
                 components: [
                   {
@@ -77,7 +78,7 @@ export class HttpService {
           }    
         ]
       };
-    
+
       // set the appropriate HTTP header
       res.setHeader('Content-Type', 'application/json');
       res.json(data);

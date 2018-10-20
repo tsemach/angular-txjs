@@ -7,13 +7,17 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppMaterialModule } from '../app-material.module';
-import { ServiceMenuComponent } from './service-menu.component';
+import { ServiceMenuComponent } from './service-menu/service-menu.component';
 import { ApplicationService } from '../services/application.service';
 import { ApplicationErrorHandler } from '../common/application-error-hadler';
+import { JobsViewerComponent } from './jobs-viewer/jobs-viewer.component';
+import { OverviewComponent } from './overview.component';
 
 @NgModule({
   declarations: [
     ServiceMenuComponent,
+    JobsViewerComponent,
+    OverviewComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +31,7 @@ import { ApplicationErrorHandler } from '../common/application-error-hadler';
     ApplicationService,
 //    { provide: ErrorHandler, useClass: ApplicationErrorHandler}    
   ],
-  exports: [ServiceMenuComponent]
+  exports: [OverviewComponent]
 })
-export class AppServiceMenuModule{ }
+export class AppOverviewModule{ }
 

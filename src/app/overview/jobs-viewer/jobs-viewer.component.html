@@ -1,0 +1,40 @@
+<div class="card-deck" style="margin-left: 10px; margin-right: 20px; margin-top: 20px">
+  <div class="card" *ngFor="let i of [1,2,3]">          
+    <div class="card-header" style="background-color: rgb(88, 161, 163)">
+        Job-{{ i }}
+    </div>
+    <div class="card-block">
+      <p class="card-title list-group-item"><b>Job Components</b></p>
+          
+      <div class="row" >
+        <div class="col">
+        <ul class="list-group list-group-flush" style="border: 1px solid rgb(233, 226, 226);">                              
+
+          <label class="list-group-item"> dir-1
+            <!-- <i class="fa fa-caret-down"></i> -->
+            <i class="fa fa-remove" style="color: red;"></i> 
+          </label> 
+          <label class="list-group-item">dir-2
+            <!-- <i class="fa fa-caret-down"></i> -->
+            <i class="fa fa-check" style="color: green"></i> 
+          </label> 
+
+          <button class="dropdown-btn"> dir-1
+            <!-- <i class="fa fa-caret-down"></i> -->
+            <i class="fa fa-remove" style="color: red;"></i> 
+          </button> 
+          <button class="dropdown-btn">dir-2
+            <!-- <i class="fa fa-caret-down"></i> -->
+            <i class="fa fa-check" style="color: green"></i> 
+          </button> 
+
+        </ul>              
+        </div>
+      </div>
+      
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last execute 3 mins ago</small>
+    </div>
+  </div>  
+</div>

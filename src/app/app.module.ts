@@ -25,7 +25,7 @@ import { AppMaterialModule } from './app-material.module';
 import { AppTopbarModule } from './topbar/topbar.module';
 import { AppComponent } from './app.component';
 // import { ServiceMenuComponent } from './service-menu/service-menu.component';
-import { AppServiceMenuModule } from './service-menu/service-menu.module';
+import { AppOverviewModule } from './overview/overview.module';
 
 @NgModule({
   declarations: [
@@ -43,7 +43,7 @@ import { AppServiceMenuModule } from './service-menu/service-menu.module';
     NgbModule,
     AppMaterialModule,
     AppTopbarModule,
-    AppServiceMenuModule    
+    AppOverviewModule    
   ],
   providers: [],
   bootstrap: [AppComponent]

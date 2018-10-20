@@ -1,13 +1,20 @@
+
 <div class="container-fluid" style="padding: 0px;"> 
   <div class="row">
-    
     <div class="col-1" style="padding: 0px; margin-top: 20px;">
+      <app-service-menu></app-service-menu>    
+    </div>
+
+    <div class="col-6" style="padding: 0px;">
+      <app-jobs-viewer></app-jobs-viewer>
+    </div>  
+    <!-- <div class="col-1" style="padding: 0px; margin-top: 20px;">
 
       <ul class="list-group">
-        <li *ngFor="let service of services" class="list-group-item"><a href="#">{{ service.name }}</a></li>
+        <li *ngFor="let service of services" class="service-group-list-item list-group-item"><a href="#">{{ service.name }}</a></li>
       </ul>
 
-      <ngb-accordion #acc="ngbAccordion" activeIds="activeIds" *ngIf="true">
+      <ngb-accordion #acc="ngbAccordion" activeIds="activeIds" *ngIf="false">
               
         <ngb-panel *ngFor="let service of services">
 
@@ -25,9 +32,9 @@
 
       </ngb-accordion>
 
-    </div>
+    </div> -->
 
-    <div class="col-10" style="padding: 0px;">
+    <!-- <div class="col-10" style="padding: 0px;">
       <div class="card-deck" style="margin-left: 10px; margin-right: 20px; margin-top: 20px">
         <div class="card" *ngFor="let i of [1,2,3]">          
           <div class="card-header" style="background-color: rgb(88, 161, 163)">
@@ -35,12 +42,32 @@
           </div>
           <div class="card-block">
             <p class="card-title"><b>Job Components</b></p>
+                
+            <div class="row" >
+              <div class="col">
+              <ul class="list-group list-group-flush" style="border: 1px solid rgb(233, 226, 226);">                              
+                <li class="list-group-item">Cras justo odio         </li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>                
+                                
+                <label class="list-group-item">Button
+                  <i class="fa fa-remove" style="color: red; padding: 5px;  margin-left: 100px"></i> 
+                  <i class="fa fa-check text-align-right" style="padding: 5px; color: green"></i> 
+                </label>                
+                
+                <label class="list-group-item">
+                  <i class="fa fa-remove align-self-end" style="padding: 5px; color: red"></i> 
+                  <i class="fa fa-check text-align-right" style="padding: 5px; color: green"></i> 
+                  Button
+                </label>
+                <label class="list-group-item">
+                  <i class="fa fa-remove align-self-end" style="padding: 5px; color: red"></i> 
+                  <i class="fa fa-check text-align-right" style="padding: 5px; color: green"></i> 
+                  Button
+                </label>                
 
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Cras justo odio</li>
-              <li class="list-group-item">Dapibus ac facilisis in</li>
-              <li class="list-group-item">Vestibulum at eros</li>
-            </ul>
+              </ul>              
+              </div>
+            </div>
             
           </div>
           <div class="card-footer">
@@ -48,7 +75,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
   </div>   
 </div>

@@ -1,0 +1,41 @@
+{
+  "name": "cloud",
+  "version": "1.0.0",
+  "description": "How to install and run nodejs with TypeScript code ==================================================",
+  "main": "index.js",
+  "dependencies": {
+    "@types/body-parser": "^1.17.0",
+    "@types/cors": "^2.8.4",
+    "@types/dotenv": "^4.0.3",
+    "@types/morgan": "^1.7.35",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.2",
+    "logging": "^3.2.0",
+    "morgan": "^1.9.0",
+    "rxjs": "^6.2.2",
+    "short-uuid": "^3.0.1",
+    "typings": "^2.1.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.6",
+    "@types/debug": "0.0.30",
+    "@types/express": "^4.16.0",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^8.5.2",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.14.2",
+    "ts-node": "^7.0.1"
+  },
+  "scripts": {
+    "build": "echo compiling ... ; tsc",
+    "dev": "tsc; ./node_modules/.bin/nodemon dist/src/application/index.js",
+    "test": "tsc; mocha dist/tests/**/*.spec.js",
+    "ts-test": "mocha -r ts-node/register src/**/test.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

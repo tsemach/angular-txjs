@@ -1,6 +1,61 @@
 <app-topbar></app-topbar>
-    <button class="mat-raised-button mat-primary" >Save</button>
-<app-service-menu></app-service-menu>     
+<app-overview></app-overview> 
+
+
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!
+  </h1>
+</div>
+
+<div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center">
+  <div fxFlex="20%">
+    <img mat-card-image class="img" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/8V46UZCS0V.jpg">
+  </div>
+  <div fxFlex="20%">
+    <img mat-card-image class="img" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/LTLE4QGRVQ.jpg">
+  </div>
+  <div fxFlex="20%">
+    <img mat-card-image class="img" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/R926LU1YEA.jpg">
+  </div>
+  <div fxFlex="20%">
+    <img mat-card-image class="img" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/U9PP3KXXY2.jpg">
+  </div>
+</div>
+
+
+<!-- 
+<div class="container-fluid" style="padding: 0px;">  
+  <div class="col-3" style="padding: 0px;">
+    <ngb-accordion #acc="ngbAccordion">
+  
+      <ngb-panel [disabled]="true">
+        <ng-template ngbPanelTitle> 
+          <label for="">No Services</label>
+        </ng-template>
+      </ngb-panel>
+
+      <ngb-panel>
+        <ng-template ngbPanelTitle>      
+          <label>service-1</label>      
+        </ng-template>
+        <ng-template ngbPanelContent>
+          job-1
+          job-2
+          
+        </ng-template>
+      </ngb-panel>
+      <ngb-panel title="Two">
+        <ng-template ngbPanelContent>
+          job-4
+          job-3
+        </ng-template>
+      </ngb-panel>
+
+    </ngb-accordion>
+
+  </div>
+</div> -->
 
 
 <!-- <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">

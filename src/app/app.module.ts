@@ -18,14 +18,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppMaterialModule } from './app-material.module';
 
-import { TopbarNavComponent } from './topbar/topbar-nav/topbar-nav.component';
-import { TobarDialogAddServiceComponent } from './topbar/tobar-dialog-add-service/tobar-dialog-add-service.component';
-import { TopbarComponent } from './topbar/topbar.component';
+// import { TopbarNavComponent } from './topbar/topbar-nav/topbar-nav.component';
+// import { TobarDialogAddServiceComponent } from './topbar/tobar-dialog-add-service/tobar-dialog-add-service.component';
+// import { TopbarComponent } from './topbar/topbar.component';
 
 import { AppTopbarModule } from './topbar/topbar.module';
 import { AppComponent } from './app.component';
 // import { ServiceMenuComponent } from './service-menu/service-menu.component';
-import { AppServiceMenuModule } from './service-menu/service-menu.module';
+import { AppOverviewModule } from './overview/overview.module';
 
 @NgModule({
   declarations: [
@@ -38,16 +38,13 @@ import { AppServiceMenuModule } from './service-menu/service-menu.module';
   imports: [
     BrowserModule,
     FormsModule,    
-    MDBBootstrapModule.forRoot(),  
+    MDBBootstrapModule.forRoot(),
     BrowserAnimationsModule,
     NgbModule,
     AppMaterialModule,
     AppTopbarModule,
-    AppServiceMenuModule    
+    AppOverviewModule    
   ],
-  // entryComponents: [
-  //   TobarDialogAddServiceComponent
-  // ],
   providers: [],
   bootstrap: [AppComponent]
 })

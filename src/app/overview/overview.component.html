@@ -1,0 +1,101 @@
+
+<div class="container-fluid" style="padding: 0px;"> 
+  <div class="row">
+    <div class="col-1" style="padding: 0px; margin-top: 20px;">
+      <app-service-menu></app-service-menu>    
+    </div>
+
+    <div class="col-6" style="padding: 0px;">
+      <app-jobs-viewer></app-jobs-viewer>
+    </div>  
+    <!-- <div class="col-1" style="padding: 0px; margin-top: 20px;">
+
+      <ul class="list-group">
+        <li *ngFor="let service of services" class="service-group-list-item list-group-item"><a href="#">{{ service.name }}</a></li>
+      </ul>
+
+      <ngb-accordion #acc="ngbAccordion" activeIds="activeIds" *ngIf="false">
+              
+        <ngb-panel *ngFor="let service of services">
+
+          <ng-template ngbPanelTitle> 
+            <label for="">{{ service.name }}</label>
+          </ng-template>
+
+          <ng-template ngbPanelContent activeIds="ngb-panel-0" #allservices>          
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" *ngFor="let job of service.jobs"><a href="#">{{ job.name }}</a></li>
+            </ul>
+          </ng-template>
+
+        </ngb-panel>
+
+      </ngb-accordion>
+
+    </div> -->
+
+    <!-- <div class="col-10" style="padding: 0px;">
+      <div class="card-deck" style="margin-left: 10px; margin-right: 20px; margin-top: 20px">
+        <div class="card" *ngFor="let i of [1,2,3]">          
+          <div class="card-header" style="background-color: rgb(88, 161, 163)">
+              Job-{{ i }}
+          </div>
+          <div class="card-block">
+            <p class="card-title"><b>Job Components</b></p>
+                
+            <div class="row" >
+              <div class="col">
+              <ul class="list-group list-group-flush" style="border: 1px solid rgb(233, 226, 226);">                              
+                <li class="list-group-item">Cras justo odio         </li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>                
+                                
+                <label class="list-group-item">Button
+                  <i class="fa fa-remove" style="color: red; padding: 5px;  margin-left: 100px"></i> 
+                  <i class="fa fa-check text-align-right" style="padding: 5px; color: green"></i> 
+                </label>                
+                
+                <label class="list-group-item">
+                  <i class="fa fa-remove align-self-end" style="padding: 5px; color: red"></i> 
+                  <i class="fa fa-check text-align-right" style="padding: 5px; color: green"></i> 
+                  Button
+                </label>
+                <label class="list-group-item">
+                  <i class="fa fa-remove align-self-end" style="padding: 5px; color: red"></i> 
+                  <i class="fa fa-check text-align-right" style="padding: 5px; color: green"></i> 
+                  Button
+                </label>                
+
+              </ul>              
+              </div>
+            </div>
+            
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last execute 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  </div>   
+</div>
+
+<!-- <div class="card" style="width: 20rem;">
+  <div class="card-header">
+    Featured
+  </div>
+  
+  <div class="card-block">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+  <div class="card-block">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div> -->

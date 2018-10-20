@@ -1,6 +1,5 @@
-import { Component, ViewChild, Renderer2, ElementRef } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { HostListener } from '@angular/core';
+import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -9,7 +8,5 @@ import { HostListener } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-txjs';
-
   
-
 }

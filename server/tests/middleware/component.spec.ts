@@ -24,7 +24,6 @@ describe('Component Middleware Test', () => {
     after = Component.upJSON(from).toJSON();
     expect(from.name).to.equal(after['name']);
     expect('GITHUB::GISPT::WRITE').to.not.equal(after['name']);
-
   });
 
 });

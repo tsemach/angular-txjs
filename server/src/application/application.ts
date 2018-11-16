@@ -19,14 +19,11 @@ export class Application {
     this.middleware();
   }
 
-  public static get instance(): Application {
-    console.log('instance: enter too');
-    if (this._instance) { 
-      console.log('instance: in if this = ' + this._instance != null);
+  public static get instance(): Application {    
+    if (this._instance) {       
       return this._instance;
     }
-    this._instance = new this();
-    console.log('instance: this = ' + this._instance != null);
+    this._instance = new this();    
     return this._instance;
   }
 
@@ -43,8 +40,7 @@ export class Application {
    * @param where - thed of which the service is route (regular express path)
    * @param service - a class which implement this route
    */
-  register(where, service) {
-    console.log('going to add ' + where);
+  register(where, service) {    
     this.express.use(where, service.add());
   }
 

@@ -9,7 +9,7 @@ export class SanityService {
 
   public add(): express.Router {
     // route: more --------------------------------------------------------------
-      const router = express.Router();
+    const router = express.Router();
 
     router.get('/', (req, res, next) => {
       console.log('got request');
